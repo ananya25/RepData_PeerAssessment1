@@ -42,7 +42,7 @@ hist(x=dailyavg,
      xlab="Daily total steps",
      ylab="Frequency",
      main="The distribution of daily total (missing data ignored)")
-![Image](https://cloud.githubusercontent.com/assets/11684000/12294088/b119829c-b9c5-11e5-9d67-6c6a73aa0b19.png?raw=true)
+https://raw.githubusercontent.com/ananya25/RepData_PeerAssessment1/b7611be92afc0c8d3172162d3f8fba9a882eac7e/Data-Science%20CE/Reproducible%20Research/Project/distirbution%20of%20dailytotal%20ignoring%20missing%20values.png
 Mean of total number of steps taken per day
 mean(dailyavg)
 ## [1] 10729.94
@@ -60,7 +60,7 @@ with(df_avgint,
           type="l",
           xlab="5-minute intervals",
           ylab="average steps in the interval across all days"))
-https://cloud.githubusercontent.com/assets/11684000/12294087/b1155b54-b9c5-11e5-8d7c-8233452e8176.png
+https://raw.githubusercontent.com/ananya25/RepData_PeerAssessment1/b7611be92afc0c8d3172162d3f8fba9a882eac7e/Data-Science%20CE/Reproducible%20Research/Project/avg%20steps%20in%205%20minute%20intervals.png
 ### Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
 max_steps <- max(df_avgint$avg)
@@ -88,7 +88,7 @@ hist(x=new_dailysum,
      xlab="daily steps",
      ylab="frequency",
      main="The distribution of daily total (with missing data imputed)")
-https://cloud.githubusercontent.com/assets/11684000/12294089/b11c5a30-b9c5-11e5-89ee-f947398aaf1c.png
+https://raw.githubusercontent.com/ananya25/RepData_PeerAssessment1/b7611be92afc0c8d3172162d3f8fba9a882eac7e/Data-Science%20CE/Reproducible%20Research/Project/distribution%20of%20daily%20steps%20with%20imputed%20data.png
 Comparing with the previous mean and median from data where mising values where removed. Mean for imputed data is
 
 mean(new_dailysum)
@@ -125,4 +125,4 @@ xyplot(steps ~ interval | factor(wk),
        type="l",
        lty=1,
        data=wk_df)
-https://cloud.githubusercontent.com/assets/11684000/12294090/b11c28ee-b9c5-11e5-8762-dd3d048748b9.png
+https://raw.githubusercontent.com/ananya25/RepData_PeerAssessment1/b7611be92afc0c8d3172162d3f8fba9a882eac7e/Data-Science%20CE/Reproducible%20Research/Project/weekday%20vs%20weekend.png
